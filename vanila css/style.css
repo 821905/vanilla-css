@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo{
+    text-decoration: none;
+    font-weight: 700;
+    font-size:xx-large;
+    color: chocolate;
+
+}
+
+nav a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 500;
+    color: chocolate;
+    margin-left: 2rem;
+}
+
+nav a:hover{
+    color: khaki;
+    cursor: pointer;
+}
+
+.nav-icon {
+    color: chocolate;
+    font-size: 1.4rem;
+}
+
+.nav-icon{
+    display: none;
+}
+
+section{
+    height: 55rem;
+    width: 100%;
+    padding-top: 7rem;
+    background-color: khaki;
+    border-bottom: 1px solid aqua;
+}
+
+#home{
+   background: url(https://cdn6.dissolve.com/p/D929_41_198/D929_41_198_1200.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+.home-content{
+    margin: 3rem 3rem;
+}
+
+.first{
+background-image: cover;
+
+}
+
+h1 span{
+   color: chocolate;
+}
+
+.home-content p{
+   padding-top: 1rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    width: 5rem;
+    height: 2rem;
+    background: peru;
+    border-radius: 0.4rem;
+    border-style: none;
+    background-color:chocolate;
+    color: antiquewhite;
+}
+
+.btn:hover{
+   background-color:khaki;
+   color: red;
+   cursor: pointer;
+}
+
+.para{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+    
+    
+    
+}
+.para p{
+    width: 33rem;
+    padding: 2rem ;
+}
+
+
+
+.cent{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+
+.f-btn{
+    width: 4.5rem;
+    height: 1.8rem;
+    border-radius: 0.3rem;
+    border-color: transparent;
+    background-color: chocolate;
+    font-weight: 600;
+    
+}
+
+.f-btn:hover{
+    background-color:gray ;
+    color: whitesmoke;
+}.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.form h2{
+    font-size: 2rem;
+}
+
+.inp{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    
+}
+
+.inp h3{
+    padding-left: 1rem;
+}
+
+.form input{
+    width: 15rem;
+    height: 2rem;
+    padding: 1rem ;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    border: transparent;
+    border-bottom: 1px solid burlywood;
+    background: transparent;
+    outline: none;
+
+}
+
+.input-box{
+    display: flex;
+    align-items: center;
+    
+}
+
+.input-box i{
+   color: chocolate;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+
+.icon i{
+    font-size: 4rem;
+    color: chocolate;
+}
+
+.one{
+    width: 31rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    padding: 2rem 2rem;
+}
+
+.about h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    margin-top: 5rem;
+}
+
+.Footer{
+    height: 10rem;
+    width: 100%;
+    background-color: khaki;
+
+}
+
+.Footer i{
+    font-size: 1.6rem;
+    color: chocolate;
+    cursor: pointer;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+@media (max-width :440px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #skill{
+        height: 140rem;
+    }
+
+    #about{
+        height: 80rem;
+    }
+
+    .pic{
+     width: 31rem;
+     height: 24rem;
+     padding-left: 5.5rem;
+   }
+
+    .about p{
+        width: 18rem;
+    }
+
+    .container{
+        padding-left: 5rem;
+    }
+      #home{
+        padding-top: 28rem;
+      }
+
+    nav {
+       position: absolute;
+       top: 7rem;
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       overflow: hidden;
+       max-height: 0rem;
+
+    }
+
+    nav a{
+        padding: 1rem;
+
+    }
+
+    nav a:hover{
+        color: cadetblue;
+    }
+
+    .nav-icon{
+        display: block;
+        cursor: pointer;
+        
+    }
+
+    #menuList{
+     transition: max-height 0.5s ease;
+    }
+
+    section{
+       width: 39rem; 
+    }
+
+    .Footer{
+        width: 39rem;
+    }
+}
+
+@media(min-width:441px) and (max-width:850px){
+     .container{
+        display: flex;
+
+    }
+    #skill{
+        height:80rem ;
+    
+    }
+     #about{
+        height:80rem ;
+    }
+}
+ 
+@media(min-width:441px) and (max-width:850px){
+     .container{
+        display: flex;
+
+    }
+    #skill{
+        height:80rem ;
+    
+    }
+     #about{
+        height:80rem ;
+    }
+}
+
+@media(min-width:441px) and (max-width:850px){
+     .container{
+        display: flex;
+
+    }
+    #skill{
+        height:80rem ;
+    
+    }
+     #about{
+        height:80rem ;
+    }
+}
+
+@media(min-width:441px) and (max-width:850px){
+     .container{
+        display: flex;
+
+    }
+    #skill{
+        height:80rem ;
+    
+    }
+     #about{
+        height:80rem ;
+    }
+}
+@media(min-width:441px) and (max-width:850px){
+     .container{
+        display: flex;
+
+    }
+    #skill{
+        height:80rem ;
+    
+    }
+     #about{
+        height:80rem ;
+    }
+}
+
+@media(min-width:441px) and (max-width:850px){
+     .container{
+        display: flex;
+
+    }
+    #skill{
+        height:80rem ;
+    
+    }
+     #about{
+        height:80rem ;
+    }
+}
+
+@media(min-width:851px) and (max-width:1290px){
+     .container{
+        display: flex;
+
+    }
+    #skill{
+        height:60rem ;
+    
+    }
+     #about{
+        height:60rem ;
+    }
+}
+
+
+
+
